@@ -1,5 +1,5 @@
 /* 1st problem
-fixed size sliding window
+fixed-size sliding window
 comparing subarrays using windows and finding the new sum
 {1, 2, 3, 4, 5, 6}
 grab 123, compare to 234
@@ -33,3 +33,11 @@ const num = 3;
 const maxSum = maxSubarraySum(arr, num)
 console.log(maxSum) // 24, maxSum of 3 num array (7, 8, 9)
 //-----------------------------------------------------------
+/* variable-sized sliding window
+finding the longest subarray (variable window) with a sum less than or equal to a given value
+*/
+let left = 0;
+let right = 0;
+let currentSum = 0;
+let maxLength = 0;
+// initializing values 
